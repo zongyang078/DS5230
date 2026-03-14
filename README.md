@@ -1,17 +1,19 @@
-# DS5230 Coursework
+# DS5230 - Data Mining in Engineering
 
-Coursework and coding exercises for **DS5230: Unsupervised Learning & Data Mining**  
-Northeastern University (Silicon Valley)
+Homework assignments for DS5230 at Northeastern University (Fall 2025).
 
-## Contents
-- Homework scripts and experiments
-- Datasets used for assignments
-- Plots and results for assignments
+## Structure
 
-## Topics
-- K-means clustering  
-- Elbow method and SSE  
-- Data preprocessing and visualization
--  
+| Folder | Topic |
+|--------|-------|
+| hw1 | Environment Setup & Iris Dataset |
+| hw2 | Survey Design, Data Collection & Basic Analysis |
+| hw3 | Portland CDBG Grant Data - Cleaning & Visualization |
+| hw4 | 3D Clustering (K-Means, DBSCAN, Mean Shift) & Density Map |
+| hw5 | Apriori Algorithm - From Scratch & Library Implementation |
+| hw6 | Text Mining & Word Network Graphs |
+| hw7 | PCA on Concrete and Abalone Datasets |
 
-Author: Zongyang Li
+## Tech Stack
+
+Python, NumPy, Pandas, Matplotlib, Scikit-learn, SciPy, mlxtend, NetworkX
