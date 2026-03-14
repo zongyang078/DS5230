@@ -1,6 +1,6 @@
 # DS5230 - Data Mining in Engineering
 
-Homework assignments for DS5230 at Northeastern University (Fall 2025).
+Homework assignments for DS5230 at Northeastern University (Spring 2026).
 
 ## Structure
 
