@@ -1,9 +1,5 @@
 """
-HW3 Data Cleaning Script
 Cleans CDBG application data for 2022-2026 analysis
-
-Author: [Your Name]
-Date: 2024-02-02
 """
 
 import pandas as pd
@@ -11,20 +7,16 @@ import numpy as np
 import re
 from pathlib import Path
 
-# ============================================================================
 # Configuration
-# ============================================================================
-DATA_FILE = Path("data/2022-2026_Case_Data.xlsx")
-OUTPUT_DIR = Path("output")
+DATA_FILE = Path("data/2022-2026 Case Data.xlsx")
+OUTPUT_DIR = Path("hw3_output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 pd.set_option("display.max_columns", 200)
 pd.set_option("display.width", 200)
 
-# ============================================================================
-# Helper Functions
-# ============================================================================
 
+# Helper Functions
 def to_number(value):
     """Convert string to numeric, handling currency symbols and commas"""
     if pd.isna(value):
@@ -80,10 +72,7 @@ def is_summary_row(org):
     return bool(re.search(r"total|subtotal|available|cap|estimated", s))
 
 
-# ============================================================================
 # Main Processing Function
-# ============================================================================
-
 def clean_sheet(sheet_name, file_path):
     """
     Clean a single worksheet from the Excel file
@@ -214,10 +203,7 @@ def clean_sheet(sheet_name, file_path):
     return result
 
 
-# ============================================================================
 # Main Execution
-# ============================================================================
-
 def main():
     """Main function: process all sheets and combine"""
     
@@ -266,7 +252,7 @@ def main():
     print(f"\nMissing Awards: {combined['Funding_Award'].isna().sum()}")
     
     # Save cleaned data
-    output_file = OUTPUT_DIR / "cleaned_data.csv"
+    output_file = OUTPUT_DIR / "cleaned_data_2022_2026.csv"
     combined.to_csv(output_file, index=False)
     
     print(f"\n✓ Data saved to: {output_file}")

@@ -1,15 +1,10 @@
 """
-HW3 Final Complete Analysis
+Final Complete Analysis
 Automatically detects column names and generates all report assets
-
-Usage: python hw3_final_analysis.py
 
 Output:
 - Charts: output/report_assets/charts/ (5 PNG files)
 - Tables: output/report_assets/tables/ (8 CSV files)
-
-Author: [Your Name]
-Date: 2024-02-02
 """
 
 import pandas as pd
@@ -23,12 +18,7 @@ import sys
 # Configuration
 # ============================================================================
 # Try multiple possible file names
-POSSIBLE_DATA_FILES = [
-    Path("output/cleaned_data.csv"),
-    Path("output/cleaned_2022_2026_complete.csv"),
-    Path("output/cleaned_2022_2026.csv"),
-    Path("cleaned_data.csv"),
-]
+POSSIBLE_DATA_FILES = [Path("hw3_output/cleaned_data_2022_2026.csv")]
 
 DATA_FILE = None
 for path in POSSIBLE_DATA_FILES:
@@ -44,7 +34,7 @@ if DATA_FILE is None:
         print(f"  - {p}")
     sys.exit(1)
 
-OUTPUT_DIR = Path("output/report_assets")
+OUTPUT_DIR = Path("hw3_output/report_assets")
 CHARTS_DIR = OUTPUT_DIR / "charts"
 TABLES_DIR = OUTPUT_DIR / "tables"
 CHARTS_DIR.mkdir(parents=True, exist_ok=True)

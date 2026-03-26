@@ -1,5 +1,4 @@
 """
-HW3 Visualization Script
 Generates all required visualizations per Rowen's requirements
 
 Requirements from Rowen:
@@ -10,9 +9,6 @@ Requirements from Rowen:
 5. Number and type of priority categories
 
 Note: Separate findings by application category (Social Services vs Construction/Development)
-
-Author: [Your Name]
-Date: 2024-02-02
 """
 
 import pandas as pd
@@ -24,8 +20,8 @@ from pathlib import Path
 # ============================================================================
 # Configuration
 # ============================================================================
-DATA_FILE = Path("output/cleaned_data.csv")
-OUTPUT_DIR = Path("output/figures")
+DATA_FILE = Path("hw3_output/cleaned_data_2022_2026.csv")
+OUTPUT_DIR = Path("hw3_output/figures")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 sns.set_style("whitegrid")

@@ -1,9 +1,5 @@
 """
-HW3 Stretch Goal - 10-Year Trend Comparison
 Compares trends from 2016-2022 period vs 2022-2026 period
-
-Author: [Your Name]
-Date: 2024-02-02
 """
 
 import pandas as pd
@@ -14,8 +10,8 @@ from pathlib import Path
 # ============================================================================
 # Configuration
 # ============================================================================
-DATA_2016_2022 = Path("data/2016-2022_Case_Data.xlsx")
-OUTPUT_DIR = Path("output")
+DATA_2016_2022 = Path("data/2016-2022 Case Data.xlsx")
+OUTPUT_DIR = Path("hw3_output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 # ============================================================================

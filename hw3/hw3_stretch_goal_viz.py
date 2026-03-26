@@ -1,9 +1,5 @@
 """
-HW3 Stretch Goal Visualization
-Compare trends between 2016-2022 and 2022-2026 periods
-
-Author: [Your Name]  
-Date: 2024-02-02
+Stretch Goal Visualization
 """
 
 import pandas as pd
@@ -15,9 +11,9 @@ from pathlib import Path
 # ============================================================================
 # Configuration
 # ============================================================================
-DATA_2016_2022 = Path("output/cleaned_data_2016_2022.csv")
-DATA_2022_2026 = Path("output/cleaned_data.csv")
-OUTPUT_DIR = Path("output/figures")
+DATA_2016_2022 = Path("hw3_output/cleaned_data_2016_2022.csv")
+DATA_2022_2026 = Path("hw3_output/cleaned_data_2022_2026.csv")
+OUTPUT_DIR = Path("hw3_output/figures_stretch_goal")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 sns.set_style("whitegrid")
